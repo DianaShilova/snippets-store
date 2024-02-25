@@ -7,7 +7,9 @@
     "build": "tsc && vite build && electron-builder",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "rebuild": "electron rebuild.js"
+    "rebuild": "electron rebuild.js",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@uiw/react-textarea-code-editor": "^3.0.2",
@@ -22,6 +24,14 @@
   },
   "devDependencies": {
     "@electron/rebuild": "^3.4.1",
+    "@storybook/addon-essentials": "^7.6.17",
+    "@storybook/addon-interactions": "^7.6.17",
+    "@storybook/addon-links": "^7.6.17",
+    "@storybook/addon-onboarding": "^1.0.11",
+    "@storybook/blocks": "^7.6.17",
+    "@storybook/react": "^7.6.17",
+    "@storybook/react-vite": "^7.6.17",
+    "@storybook/test": "^7.6.17",
     "@types/better-sqlite3": "^7.6.8",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
@@ -34,6 +44,7 @@
     "eslint": "^8.48.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "storybook": "^7.6.17",
     "typescript": "^5.2.2",
     "vite": "^4.4.9",
     "vite-plugin-electron": "^0.14.0",
