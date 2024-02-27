@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 type Props = {
   kind?: 'primary' | 'secondary' | 'danger';
-}
+};
 
 export const Button = styled.button<Props>`
   color: white;
@@ -12,10 +12,12 @@ export const Button = styled.button<Props>`
   font-size: 12px;
   display: flex;
   justify-content: center;
+  align-items: center;
   outline: none;
   border: none;
 
-  &:focused, &:active {
+  &:focused,
+  &:active {
     outline: 1px solid #8250df;
   }
 

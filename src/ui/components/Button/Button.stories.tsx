@@ -9,6 +9,23 @@ const meta: Meta<typeof Button> = {
 export default meta;
 type Story = StoryObj<typeof Button>;
 
+// export const Primary: Story = {
+//   render: (...args) => (
+//     <Button kind="danger" {...args}>
+//       Button
+//     </Button>
+//   ),
+// };
+
 export const Primary: Story = {
-  render: () => <Button primary label="Button" />,
+  args: {
+    kind: 'primary',
+    children: 'button',
+  },
+  argTypes: {
+    kind: {
+      options: ['primary', 'secondary', 'danger'],
+      control: { type: 'radio' },
+    },
+  },
 };
